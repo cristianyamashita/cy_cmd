@@ -1,0 +1,13 @@
+{
+  "name": "ping_hosts",
+  "aliases": [
+    "ph"
+  ],
+  "description": "Check if a list of hosts answers ping (cmd_path + params_map example).",
+  "cmd_path": "examples/scripts/ping_hosts.sh",
+  "params_map": {
+    "hl": "hosts",
+    "c": "count"
+  },
+  "help": "Ping each host and print OK or FAIL.\n\nThis command runs a script file (cmd_path). Short flags are mapped to the script's long flags with params_map.\n\nAliases:\nph\n\nParameters:\n- Use -hl/--hosts to pass a comma separated host list (default: 1.1.1.1,example.com).\n- Use -c/--count to set how many pings per host (default: 1).\n\nExamples:\ncy ping_hosts\ncy ph -c 3 -hl 1.1.1.1,8.8.8.8,example.com"
+}

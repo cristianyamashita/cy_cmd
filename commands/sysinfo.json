@@ -1,0 +1,19 @@
+{
+  "name": "sysinfo",
+  "aliases": [
+    "si"
+  ],
+  "description": "Show a quick summary of this Mac (OS, uptime, disk).",
+  "cmd": [
+    "echo \"== macOS ==\"",
+    "sw_vers 2>/dev/null || uname -a",
+    "echo",
+    "echo \"== Uptime ==\"",
+    "uptime",
+    "echo",
+    "echo \"== Disk ==\"",
+    "df -h /"
+  ],
+  "params_map": {},
+  "help": "Show OS version, uptime and free disk space.\n\nAliases:\nsi\n\nExamples:\ncy sysinfo\ncy si"
+}

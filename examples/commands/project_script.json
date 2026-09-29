@@ -1,0 +1,13 @@
+{
+  "name": "my_app_build",
+  "aliases": [
+    "mab"
+  ],
+  "description": "Run a build script inside a project folder (cwd example).",
+  "cwd": "~/Projects/my-app",
+  "cmd": [
+    "./scripts/build.sh && ./scripts/test.sh"
+  ],
+  "params_map": {},
+  "help": "Run build.sh and test.sh inside ~/Projects/my-app.\n\nThe cwd field sets the working directory for inline commands.\n\nAliases:\nmab\n\nExamples:\ncy my_app_build\ncy mab"
+}

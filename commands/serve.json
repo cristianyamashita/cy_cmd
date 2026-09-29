@@ -1,0 +1,16 @@
+{
+  "name": "serve",
+  "aliases": [
+    "sv"
+  ],
+  "description": "Start a local web server in background (background command example).",
+  "background": true,
+  "cmd": [
+    "python3 web_server/server.py examples/site \"$@\""
+  ],
+  "params_map": {
+    "p": "port",
+    "b": "bind"
+  },
+  "help": "Serve the examples/site folder over HTTP in background.\n\nRelative paths are resolved from the cy folder.\n\nAliases:\nsv\n\nControls:\ncy serve --start\ncy serve --status\ncy serve --stop\ncy serve --restart\n\nParameters:\n- Use -p/--port to change the port (default: 8000).\n- Use -b/--bind to change the bind address (default: 127.0.0.1).\n\nExamples:\ncy serve\ncy sv --start -p 8080\ncy sv --status\ncy sv --stop\n\nThen open http://127.0.0.1:8000/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "remote_deploy",
+  "aliases": [
+    "rd"
+  ],
+  "description": "SSH into a server and run a deploy script.",
+  "cmd": [
+    "ssh -t user@your-server.example.com 'cd /app/my-app && ./deploy.sh'"
+  ],
+  "params_map": {},
+  "help": "SSH into the server and run deploy.sh.\n\nAliases:\nrd\n\nExamples:\ncy remote_deploy\ncy rd"
+}

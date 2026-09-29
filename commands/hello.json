@@ -1,0 +1,22 @@
+{
+  "name": "hello",
+  "aliases": [
+    "hi"
+  ],
+  "description": "Say hello (inline command example with a parameter alias).",
+  "cmd": [
+    "NAME=\"there\"",
+    "while [[ $# -gt 0 ]]; do",
+    "  case \"$1\" in",
+    "    --name) NAME=\"$2\"; shift 2 ;;",
+    "    --name=*) NAME=\"${1#*=}\"; shift ;;",
+    "    *) shift ;;",
+    "  esac",
+    "done",
+    "echo \"Hello, $NAME!\""
+  ],
+  "params_map": {
+    "n": "name"
+  },
+  "help": "Print a greeting.\n\nThis is an inline command: the shell lines live inside the JSON.\n\nAliases:\nhi\n\nParameters:\n- Use -n/--name to choose who to greet.\n\nExamples:\ncy hello\ncy hi -n World"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "my_app_server",
+  "aliases": [
+    "mas"
+  ],
+  "description": "Start a project dev server in background with custom log/pid paths.",
+  "cmd_path": "~/Projects/my-app/start_server.sh",
+  "background": true,
+  "log_path": "~/Library/Logs/my_app_server.log",
+  "pid_path": "~/.cache/my_app_server.pid",
+  "params_map": {
+    "p": "port"
+  },
+  "help": "Start ~/Projects/my-app/start_server.sh in background.\n\nlog_path and pid_path are optional. Without them cy uses logs/<name>.log and run/<name>.pid.\n\nAliases:\nmas\n\nControls:\ncy my_app_server --status\ncy my_app_server --stop\ncy my_app_server --restart\n\nExamples:\ncy mas\ncy mas -p 3000\ncy mas --stop"
+}

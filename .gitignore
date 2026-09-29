@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# cy runtime files
+logs/
+run/
+*.log
+*.pid
+
+# macOS
+.DS_Store

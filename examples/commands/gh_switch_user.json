@@ -1,0 +1,12 @@
+{
+  "name": "gh_work",
+  "aliases": [
+    "ghw"
+  ],
+  "description": "Switch GitHub CLI auth to your work account.",
+  "cmd": [
+    "gh auth switch --user your-work-github-user"
+  ],
+  "params_map": {},
+  "help": "Switch the GitHub CLI to another logged-in account.\n\nAliases:\nghw\n\nExamples:\ncy gh_work\ncy ghw"
+}

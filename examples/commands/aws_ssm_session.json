@@ -1,0 +1,12 @@
+{
+  "name": "aws_ssm",
+  "aliases": [
+    "ssm"
+  ],
+  "description": "Start an AWS SSM session on an EC2 instance.",
+  "cmd": [
+    "aws ssm start-session --profile my-profile --target i-0123456789abcdef0"
+  ],
+  "params_map": {},
+  "help": "Start an SSM session on instance i-0123456789abcdef0 using the my-profile AWS profile.\n\nAliases:\nssm\n\nExamples:\ncy aws_ssm\ncy ssm"
+}
